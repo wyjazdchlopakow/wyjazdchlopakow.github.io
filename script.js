@@ -9,12 +9,15 @@ spinBtn.addEventListener("click", () => {
     if (!spinning) {
         spinning = true;
         selectedItem = null;
-        wheel.style.animation = "spin 3s ease-out";
+        const spinDuration = 3000; // 3 seconds
+        const degrees = 1080 + Math.floor(Math.random() * 1080); // Spin 3-6 full rotations
+        wheel.style.transition = `transform ${spinDuration}ms ease-out`;
+        wheel.style.transform = `rotate(${degrees}deg)`;
         setTimeout(() => {
-            wheel.style.animation = "";
+            wheel.style.transition = "none";
             spinning = false;
             showResult();
-        }, 3000);
+        }, spinDuration);
     }
 });
 
