@@ -13,8 +13,8 @@ body {
 
 .wheel {
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     margin: 20px auto;
     border-radius: 50%;
     background-color: #f1c40f;
@@ -23,12 +23,13 @@ body {
     align-items: center;
     border: 5px solid #d4ac0d;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden; /* To hide parts of the wheel items outside the circle */
 }
 
 .wheel-border {
     position: absolute;
-    width: 190px;
-    height: 190px;
+    width: 200px;
+    height: 200px;
     border: 5px solid #d4ac0d;
     border-radius: 50%;
     display: flex;
@@ -49,6 +50,7 @@ body {
     border-radius: 50%;
     margin: 5px;
     font-weight: bold;
+    transform-origin: 50% 100%;
 }
 
 button {
@@ -59,6 +61,7 @@ button {
     font-weight: bold;
     cursor: pointer;
     border-radius: 5px;
+    margin-top: 20px;
 }
 
 #result {
