@@ -1,71 +1,9 @@
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+  margin: 0;
+  padding: 0;
 }
 
-.container {
-    text-align: center;
-}
-
-.wheel {
-    position: relative;
-    width: 250px;
-    height: 250px;
-    margin: 20px auto;
-    border-radius: 50%;
-    background-color: #f1c40f;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid #d4ac0d;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    overflow: hidden; /* To hide parts of the wheel items outside the circle */
-}
-
-.wheel-border {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    border: 5px solid #d4ac0d;
-    border-radius: 50%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    transform: rotate(0deg);
-    transition: transform 3s ease-out;
-}
-
-.wheel-item {
-    width: 80px;
-    height: 80px;
-    line-height: 80px;
-    text-align: center;
-    background-color: #e74c3c;
-    color: white;
-    border-radius: 50%;
-    margin: 5px;
-    font-weight: bold;
-    transform-origin: 50% 100%;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #3498db;
-    border: none;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-#result {
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: 20px;
+#map {
+  width: 100%;
+  height: 600px; /* Możesz dostosować wysokość mapy */
 }
